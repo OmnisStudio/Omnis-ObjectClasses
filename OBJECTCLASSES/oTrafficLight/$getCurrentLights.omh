@@ -1,0 +1,6 @@
+;  return the current light settings
+Calculate pRed as iRedLight
+Calculate pAmber as iAmberLight
+Calculate pGreen as iGreenLight
+
+Quit method

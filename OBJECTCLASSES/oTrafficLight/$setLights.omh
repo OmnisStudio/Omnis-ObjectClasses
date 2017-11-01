@@ -1,0 +1,26 @@
+;  set the lights on or off
+If pRedLight
+	Do iRedLightRef.$backcolor.$assign(kRed)
+	Calculate iRedLight as kTrue
+Else
+	Do iRedLightRef.$backcolor.$assign(kColor3DLight)
+	Calculate iRedLight as kFalse
+End If
+
+
+If pAmberLight
+	Do iAmberLightRef.$backcolor.$assign(kYellow)
+	Calculate iAmberLight as kTrue
+Else
+	Do iAmberLightRef.$backcolor.$assign(kColor3DLight)
+	Calculate iAmberLight as kFalse
+End If
+
+
+If pGreenLight
+	Do iGreenLightRef.$backcolor.$assign(kGreen)
+	Calculate iGreenLight as kTrue
+Else
+	Do iGreenLightRef.$backcolor.$assign(kColor3DLight)
+	Calculate iGreenLight as kFalse
+End If

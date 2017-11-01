@@ -1,0 +1,3 @@
+;  object classes consist of properties and methods
+;  properties are used to specify various states of the object
+;  while methods are used to define the behaviour of the object

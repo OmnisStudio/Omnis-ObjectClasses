@@ -1,0 +1,5 @@
+;  sets the references that this light will use
+Set reference iRedLightRef to pRed
+Set reference iAmberLightRef to pAmber
+Set reference iGreenLightRef to pGreen
+Set reference iTimerRef to pTimerRef

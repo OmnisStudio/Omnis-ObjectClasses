@@ -1,0 +1,3 @@
+;  Received a timer message.
+On evTimer
+	Do iTrafficLight.$cycleLights()     ;; tell the traffic light object to change lights

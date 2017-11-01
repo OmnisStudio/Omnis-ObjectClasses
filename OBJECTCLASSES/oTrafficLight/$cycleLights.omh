@@ -1,0 +1,19 @@
+;  called by evTimer in window
+If iNextLight=0     ;; currently red
+	Calculate iNextLight as 1
+	Do method $setLights (kTrue,kTrue,kFalse)
+	
+Else If iNextLight=1     ;; currently red & amber
+	Calculate iNextLight as 2
+	Do method $setLights (kFalse,kFalse,kTrue)
+	
+Else If iNextLight=2     ;; currently green
+	Calculate iNextLight as 3
+	Do method $setLights (kFalse,kTrue,kFalse)
+	
+Else     ;; currently amber
+	Calculate iNextLight as 0
+	Do method $setLights (kTrue,kFalse,kFalse)
+End If
+
+Do $cwind.$redraw()

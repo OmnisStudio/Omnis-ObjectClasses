@@ -1,0 +1,12 @@
+;  enable or disable the light
+Calculate iTrafficLight as pEnable
+
+If pEnable
+	Do iRedLightRef.$backcolor.$assign(kColor3DLight) Returns #F
+	Do iAmberLightRef.$backcolor.$assign(kColor3DLight)
+	Do iGreenLightRef.$backcolor.$assign(kColor3DLight)
+Else
+	Do iRedLightRef.$backcolor.$assign(kColor3DFace)
+	Do iAmberLightRef.$backcolor.$assign(kColor3DFace)
+	Do iGreenLightRef.$backcolor.$assign(kColor3DFace)
+End If

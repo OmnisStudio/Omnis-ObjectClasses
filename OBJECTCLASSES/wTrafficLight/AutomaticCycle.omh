@@ -1,0 +1,7 @@
+;  this method controls whether to change the lights automatically or manually
+
+;  toggle variable
+Calculate iAutomaticCycle as not(iAutomaticCycle)
+
+;  tell traffic light to respond to timer
+Do iTrafficLight.$autoCycleLights(iAutomaticCycle,iTimerInterval)

@@ -1,0 +1,22 @@
+{
+	"ident": 1031,
+	"order": 16390,
+	"objtype": "kOval",
+	"properties": {
+		"backcolor": "kColor3DFace",
+		"backpattern": 1,
+		"bordercolor": "kColor3DFace",
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "",
+		"forecolor": "kColor3DFace",
+		"height": 20,
+		"left": 10,
+		"linestyle": 1,
+		"objlink": 1,
+		"top": 60,
+		"userinfo": "",
+		"visible": true,
+		"width": 20
+	}
+}

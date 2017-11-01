@@ -1,0 +1,4 @@
+;  there is no code behind the traffic light, so return the ref to the window
+
+On evRMouseDown
+	Set reference iObjectRef to $cwind

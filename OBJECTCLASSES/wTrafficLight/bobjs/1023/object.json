@@ -1,0 +1,30 @@
+{
+	"ident": 1023,
+	"order": 16386,
+	"objtype": "kText",
+	"properties": {
+		"align": "kCenterJst",
+		"backcolor": "kColor3DFace",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 16,
+		"left": 33,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "The traffic light"
+		},
+		"textcolor": "kColorWindowText",
+		"top": 60,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 83
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"ident": 1024,
+	"order": 16387,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColor3DFace",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 5,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 32,
+		"left": 16,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "\u001B\u000180000008#Press the buttons to operate the traffic lights. Context click on the buttons to view the code."
+		},
+		"textcolor": "kColorWindowText",
+		"top": 15,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 236
+	}
+}

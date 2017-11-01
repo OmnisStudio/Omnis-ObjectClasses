@@ -1,0 +1,20 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Calculate #FT as 'H:N:S'     ;; set the time format to hours,minutes and seconds
+	Do method AutomaticCycle     ;; either enable or disable automatic cycle
+	
+	If iAutomaticCycle
+		Do $cwind.$objs.AutomaticCycle.$text.$assign('Manual Cycle')
+		Do $cwind.$objs.SetLightsStop.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsPrepare.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsGo.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsStopping.$enabled.$assign(kFalse)
+	Else
+		Do $cwind.$objs.AutomaticCycle.$text.$assign('Automatic Cycle')
+		Do $cwind.$objs.SetLightsStop.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsPrepare.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsGo.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsStopping.$enabled.$assign(kTrue)
+	End If
+	
+On evRMouseDown
+	Set reference iObjectRef to $cobj

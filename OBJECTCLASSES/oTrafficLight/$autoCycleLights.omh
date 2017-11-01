@@ -1,0 +1,18 @@
+;  allow the lights to work automatically
+Calculate iCycleLights as pCycleLights
+
+If pCycleLights     ;; automatic light change
+	Do iTimerRef.$starttimer()
+	If iRedLight&iAmberLight
+		Calculate iNextLight as 1
+	Else If iRedLight
+		Calculate iNextLight as 0
+	Else If iAmberLight
+		Calculate iNextLight as 3
+	Else If iGreenLight
+		Calculate iNextLight as 2
+	End If
+Else
+	Do iTimerRef.$stoptimer() Returns #F
+	Do iTimerRef.$resettimer() Returns #F
+End If

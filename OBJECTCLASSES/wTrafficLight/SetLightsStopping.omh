@@ -1,0 +1,2 @@
+;  set the lights to prepare to stop
+Do iTrafficLight.$setLights(kFalse,kTrue,kFalse)

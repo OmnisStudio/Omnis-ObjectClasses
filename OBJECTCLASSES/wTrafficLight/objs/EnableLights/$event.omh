@@ -1,0 +1,30 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	;  get the current status of the light and enable/disable power as required
+	Do iTrafficLight.$isLightWorking Returns iLightStatus
+	Do method EnablePower
+	
+	If iLightStatus     ;; lights are working, so allow user to set the light signals
+		Do $cwind.$objs.SetLightsStop.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsPrepare.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsGo.$enabled.$assign(kTrue)
+		Do $cwind.$objs.SetLightsStopping.$enabled.$assign(kTrue)
+		Do $cwind.$objs.GetCurrentLights.$enabled.$assign(kTrue)
+		Do $cwind.$objs.EnableLights.$text.$assign('Disable Lights')
+		Do $cwind.$objs.AutomaticCycle.$text.$assign('Automatic Cycle')
+	Else
+		If iAutomaticCycle     ;; on automatic
+			Calculate iAutomaticCycle as kFalse
+			Do iTrafficLight.$autoCycleLights(iAutomaticCycle)
+		End If
+		Do $cwind.$objs.SetLightsStop.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsPrepare.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsGo.$enabled.$assign(kFalse)
+		Do $cwind.$objs.SetLightsStopping.$enabled.$assign(kFalse)
+		Do $cwind.$objs.GetCurrentLights.$enabled.$assign(kFalse)
+		Do $cwind.$objs.EnableLights.$text.$assign('Enable Lights')
+	End If
+	
+	Do $cwind.$objs.AutomaticCycle.$enabled.$assign(kFalse)
+	
+On evRMouseDown
+	Set reference iObjectRef to $cobj

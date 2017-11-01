@@ -1,0 +1,11 @@
+;  iLightStatus is a boolean representing whether the lights are powered on or off
+If not(iLightStatus)
+	;  power the light on
+	Do iTrafficLight.$enableLight(kTrue)
+Else
+	;  power the light on
+	Do iTrafficLight.$enableLight(kFalse)
+End If
+
+;  check the status of the lights now
+Do iTrafficLight.$isLightWorking Returns iLightStatus

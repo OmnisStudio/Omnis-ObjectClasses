@@ -1,0 +1,5 @@
+;  find out which lights are currently set
+Do iTrafficLight.$getCurrentLights(lRed,lAmber,lGreen)
+
+;  display result
+OK message  (Icon) {[con("Red is ",pick(lRed,'Off','On'),chr(13),"Amber is ",pick(lAmber,'Off','On'),chr(13),"Green is ",pick(lGreen,'Off','On'))]}

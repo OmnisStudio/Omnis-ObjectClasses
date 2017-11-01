@@ -1,0 +1,2 @@
+;  public method called by the context menu to return the ref of the current object under the mouse
+Quit method iObjectRef     ;; return the reference to the current object

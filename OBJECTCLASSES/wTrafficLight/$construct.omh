@@ -1,0 +1,10 @@
+;  get references to the individual lights
+Set reference iRedLightRef to $cwind.$objs.TrafficLight.$bobjs.1029
+Set reference iAmberLightRef to $cwind.$objs.TrafficLight.$bobjs.1030
+Set reference iGreenLightRef to $cwind.$objs.TrafficLight.$bobjs.1031
+
+;  get ref to non-visual timer object
+Set reference iTimerRef to $cwind.$objs.TimerObject
+
+;  prepare the object class with these refs
+Do iTrafficLight.$initialiseLights(iRedLightRef,iAmberLightRef,iGreenLightRef,iTimerRef)

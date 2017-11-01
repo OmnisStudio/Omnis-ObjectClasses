@@ -1,0 +1,6 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do method SetLightsPrepare
+	Do $cwind.$objs.AutomaticCycle.$enabled.$assign(kTrue)
+	
+On evRMouseDown
+	Set reference iObjectRef to $cobj

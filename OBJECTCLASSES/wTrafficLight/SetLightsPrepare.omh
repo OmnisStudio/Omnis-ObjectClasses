@@ -1,0 +1,2 @@
+;  set the lights to prepare
+Do iTrafficLight.$setLights(kTrue,kTrue,kFalse)
