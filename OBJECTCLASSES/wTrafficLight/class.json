@@ -70,7 +70,7 @@
 			"name": "iTrafficLight",
 			"order": 5,
 			"type": "kObject",
-			"subtype": "OBJECTS.oTrafficLight",
+			"subtype": "oTrafficLight",
 			"sublen": 0
 		}
 	],
