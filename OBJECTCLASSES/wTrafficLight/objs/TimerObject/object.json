@@ -44,7 +44,7 @@
 		"timervalue": {
 			"type": 23,
 			"subtype": 0,
-			"data": "00-00-00 00:00:02"
+			"data": "00:00:02"
 		},
 		"tooltip": "",
 		"top": 18,
